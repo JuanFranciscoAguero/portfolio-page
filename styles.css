@@ -1,0 +1,226 @@
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        background-image: url('./images/background-img.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: #fff;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 15px;
+        margin: 20px;
+        padding: 30px;
+    }
+    
+    .nav-bar {
+        padding: 20px;
+        font-size: 20px;
+    }
+    
+    .nav-bar h1 {
+        margin-bottom: 25px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    
+    .nav-bar_list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between;
+        margin: 0 12px;
+        list-style: none;
+    }
+    
+    .nav-bar_list li {
+        margin-left: 150px;
+    }
+    
+    .nav-bar_list li a {
+        text-decoration: none;
+        color: rgb(121, 118, 118);
+        font-weight: 600;
+    }
+    
+    .nav-bar_list li a:hover {
+        color: white;
+        transition: all 250ms;
+    }
+    
+    .main-description {
+        margin: 50px;
+        text-align: center;
+    }
+    
+    .main-description img {
+        width: 200px;
+        height: auto;
+        border-radius: 100%;
+        position: relative;
+        right: 13px;
+    }
+    
+    .main-name {
+        margin-bottom: 10px;
+    }
+    
+    .main-occupation {
+        font-weight: 200;
+    }
+    
+    .social-media {
+        text-align: center;
+        font-size: 40px;
+    }
+    
+    .social-media_links {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    .social-media_links li {
+        margin-left: 20px;
+    }
+    
+    .social-media_links li a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .social-media_links li a:hover {
+        color: rgb(127, 128, 128);
+        transition: all 400ms;
+    }
+    /*About*/
+    
+    .about {
+        margin: 10px 40px;
+        padding: 15px 30px;
+        background-color: rgb(65, 64, 63);
+        color: white;
+        opacity: 0.8;
+    }
+    
+    .about h2 {
+        font-size: 40px;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+    
+    .about p {
+        font-weight: 200;
+        font-size: 17px;
+        padding: 18px 0;
+    }
+    
+    .contact {
+        background-color: rgb(65, 64, 63);
+        margin: 0 40px;
+        padding: 18px 30px;
+        opacity: 0.8;
+    }
+    
+    .contact h2 {
+        font-size: 20px;
+        font-weight: 800;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    
+    .contact-form ul {
+        margin: 10px 0;
+        list-style: none;
+        display: grid;
+        grid-template-rows: repeat(5, 1fr);
+        justify-content: center;
+    }
+    
+    .contact-form ul li input {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 10px 0;
+    }
+    
+    .contact-form ul li textarea {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 10px 0;
+        padding: 5px;
+    }
+    
+    .contact-form button {
+        width: 165px;
+        padding: 20px;
+        margin: 0 440px;
+        background-color: rgb(46, 44, 44);
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .contact-form button:hover {
+        background-color: rgb(130, 124, 124);
+        color: rgb(51, 47, 47);
+        transition: all 250ms;
+    }
+    /*Projects*/
+    
+    .projects {
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .projects h2 {
+        margin: 30px;
+    }
+    
+    .projects img {
+        width: 50%;
+        margin: 25px 0;
+    }
+    
+    .projects h5 {
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    
+    .projects a {
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .projects a:hover {
+        color: rgb(130, 124, 124);
+        transition: all 250ms;
+    }
+    /*Responsive Design*/
+    
+    @media (max-width: 700px) {
+        .nav-bar {
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+            position: absolute;
+            left: 5px;
+        }
+        .nav-bar_list {
+            position: absolute;
+            left: 0;
+        }
+        .main-description {
+            width: 45%;
+            position: relative;
+            left: 125px;
+            font-size: 14px;
+        }
+        .main-description img {
+            width: 40%;
+        }
+    }
